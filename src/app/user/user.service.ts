@@ -10,8 +10,6 @@ const baseurl: string = "http://localhost:55052/api/user";
 })
 export class UserService {
 
-  user: User [];
-
   constructor(
     private http: HttpClient
   ) { }
