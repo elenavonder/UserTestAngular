@@ -11,7 +11,7 @@ import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 export class UserListComponent implements OnInit {
 
   users: User[] = [];
-
+  tableStyle: string = "table table=sm";
   constructor(
     private usersvc: UserService
   ) { }
