@@ -13,6 +13,11 @@ export class UserService {
   user: User [];
 
   constructor(
-    private http = HttpClient
+    private http: HttpClient
   ) { }
+
+  list(): Observable<User[]>{
+    return this.http.get(`${baseurl}`) as Observable<User[]>;
+  }
+
 }
