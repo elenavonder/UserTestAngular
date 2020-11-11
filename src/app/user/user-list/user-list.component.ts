@@ -10,7 +10,7 @@ import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 })
 export class UserListComponent implements OnInit {
 
-  user: User[] = [];
+  users: User[] = [];
 
   constructor(
     private usersvc: UserService
@@ -20,7 +20,7 @@ export class UserListComponent implements OnInit {
   //subscribe deals with the asynch
   ngOnInit(): void {
     this.usersvc.list().subscribe(
-      res => {console.log (res); this.user = res as User[];},
+      res => {console.log (res); this.users = res as User[];},
       err => {console.error(err)}
     )
   };
