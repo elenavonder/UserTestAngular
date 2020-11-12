@@ -18,6 +18,9 @@
             <td>{{u.username}}</td>
             <td>{{u.isAdmin ? "Yes" : "No"}}</td>
             <td>{{u.isReviewer ? "Yes" : "No"}}</td>
+            <td>
+                <a routerLink="/users/edit/{{u.id}}">Edit</a>
+            </td>
         </tr>
     </table>
 </div>

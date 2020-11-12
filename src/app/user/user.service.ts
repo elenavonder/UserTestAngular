@@ -18,4 +18,7 @@ export class UserService {
     return this.http.get(`${baseurl}`) as Observable<User[]>;
   }
 
+  getPK(id: number): Observable<User>{
+    return this.http.get(`${baseurl}/${id}`) as Observable<User>;
+  }
 }
