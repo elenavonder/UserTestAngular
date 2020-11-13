@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class BoolDisplayPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(aBoolean: boolean,): string {
+    return aBoolean ? "YES" : "NO";
   }
 
 }

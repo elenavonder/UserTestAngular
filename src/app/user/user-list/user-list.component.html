@@ -16,8 +16,9 @@
             <td>{{u.phone}}</td>
             <td>{{u.email}}</td>
             <td>{{u.username}}</td>
-            <td>{{u.isAdmin ? "Yes" : "No"}}</td>
-            <td>{{u.isReviewer ? "Yes" : "No"}}</td>
+            <!-- | bool is the title of the pipe -->
+            <td>{{u.isAdmin | bool}}</td> 
+            <td>{{u.isReviewer | bool}}</td>
             <td>
                 <a routerLink="/users/edit/{{u.id}}">Edit</a>
             </td>
